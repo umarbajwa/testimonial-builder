@@ -7,12 +7,10 @@ const SelectTesmonialView = (props) => {
     const {state, dispatch} = useTestimonialViewContext();
 
     let testimonialViewData = {...state?.data[0]};
-    console.log(testimonialViewData);
-
 
     const handleViewChange = (e, value) => {
         testimonialViewData.view = value;
-        dispatch( {type: "UPDATE", data: [testimonialViewData] });
+        dispatch( {type: "NHUPDATE", data: [testimonialViewData] });
     }
 
 
@@ -29,6 +27,7 @@ const SelectTesmonialView = (props) => {
                         alignItems="center"
                         justifyContent="center"
                         borderRadius="6px"
+                        fontSize="24px"
                         onClick={(e) => handleViewChange(e, 'slider') }
                         bg={ (testimonialViewData.view === "slider") ? "#333" : "#e3e3e3" }
                         color={ (testimonialViewData.view === "slider") ? "#fff" : "#333" }
@@ -43,6 +42,7 @@ const SelectTesmonialView = (props) => {
                         alignItems="center"
                         justifyContent="center"
                         borderRadius="6px"
+                        fontSize="24px"
                         onClick={(e) => handleViewChange(e, 'list') }
                         bg={ (testimonialViewData.view === "list") ? "#333" : "#e3e3e3" }
                         color={ (testimonialViewData.view === "list") ? "#fff" : "#333" }
@@ -56,6 +56,7 @@ const SelectTesmonialView = (props) => {
                         alignItems="center"
                         justifyContent="center"
                         borderRadius="6px"
+                        fontSize="24px"
                         onClick={(e) => handleViewChange(e, 'gallery') }
                         bg={ (testimonialViewData.view === "gallery") ? "#333" : "#e3e3e3" }
                         color={ (testimonialViewData.view === "gallery") ? "#fff" : "#333" }
