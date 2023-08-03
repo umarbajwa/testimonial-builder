@@ -1,9 +1,8 @@
 import React, {useState, useContext, useRef} from "react";
-import { TestimonialAppContext } from "./wrapper";
 import { Box, Button, Container, Flex, IconButton, Text, VStack, useDisclosure } from "@chakra-ui/react";
 import { ArrowBackIcon, ArrowForwardIcon, DeleteIcon, DragHandleIcon, EditIcon, PlusSquareIcon } from "@chakra-ui/icons";
-import TestimonialEditDrawer from "../elements/testimonialEditDrawer";
-import { useAppContext } from "../../AppContext";
+import TestimonialEditDrawer from "../../elements/testimonialEditDrawer";
+import { useAppContext } from "../../../AppContext";
 
 
 const AllTestimonials = (props) => {

@@ -36,3 +36,14 @@ export const data = [
         "id":4
     }
 ];
+
+
+export const testimonialViewData = [
+    {
+        view:"",
+        design:'',
+        options:{
+            
+        }
+    }
+]
