@@ -1,6 +1,6 @@
 import React, {useState} from "react"; 
 import { useTestimonialViewContext } from "./testimonialViewContext";
-import { Box, Grid, GridItem,  Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
+import { Box, Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import AppearanceTab from "../appearance/appearanceTab";
 import SliderSettings from "../sliderSettings/sliderSettings";
 
@@ -9,7 +9,6 @@ const SelectTesmonialDesign = (props) => {
 
     const {state, dispatch} = useTestimonialViewContext();
     let testimonialViewData = {...state?.data[0]};
-
     
     return( 
         <>

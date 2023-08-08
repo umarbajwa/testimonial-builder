@@ -17,7 +17,11 @@ import {
 const ColorPicker = (props) => {
     const [color, setColor] = useState(props.color);
 
-    console.log(color)
+    const handleColorChange = (color) => {
+        setColor(color);
+        props.updateColor(color, props.optionName);
+    }
+
     return(<>
         <Popover>
             <PopoverTrigger>
@@ -26,7 +30,7 @@ const ColorPicker = (props) => {
             <PopoverContent>
                 <PopoverArrow />
                 <PopoverCloseButton />
-                <PopoverBody> <HexAlphaColorPicker color={color} onChange={setColor} /> </PopoverBody>
+                <PopoverBody> <HexAlphaColorPicker color={color} onChange={handleColorChange} /> </PopoverBody>
             </PopoverContent>
         </Popover>
     </>);

@@ -40,10 +40,14 @@ export const data = [
 
 export const testimonialViewData = [
     {
-        view:"",
+        view:'',
         design:'',
         options:{
-            
+            typography:{
+                testimonial:{
+                    color:'#000',
+                }
+            }
         }
     }
 ]
