@@ -4,10 +4,7 @@ import AllViews from "./allViews";
 
 const Wrapper = (props) => {
 
-    
 
-
-    console.log('wrapper render');
     return(
         <TestimonialViewAppProvider >
             <AllViews />

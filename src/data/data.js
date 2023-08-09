@@ -46,6 +46,11 @@ export const testimonialViewData = [
             typography:{
                 testimonial:{
                     color:'#000',
+                },
+                author:{
+                    color:"#e3e3e3",
+                },
+                authorRole:{
                 }
             }
         }
