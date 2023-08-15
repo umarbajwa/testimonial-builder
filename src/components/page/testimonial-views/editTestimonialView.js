@@ -3,6 +3,7 @@ import { useTestimonialViewContext } from "./testimonialViewContext";
 import { Box, Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import AppearanceTab from "../appearance/appearanceTab";
 import SliderSettings from "../sliderSettings/sliderSettings";
+import SliderOne from "../previews/slider/sliderOne/sliderOne";
 
 
 const SelectTesmonialDesign = (props) => {
@@ -27,7 +28,7 @@ const SelectTesmonialDesign = (props) => {
                             <SliderSettings />
                         </TabPanel>
                         <TabPanel>
-                            preivew
+                            <SliderOne />
                         </TabPanel>
                     </TabPanels>
                 </Tabs>
