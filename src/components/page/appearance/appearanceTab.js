@@ -46,7 +46,22 @@ const AppearanceTab = () => {
                     commodo consequat.
                     </AccordionPanel>
                 </AccordionItem>
-                </Accordion>
+
+                <AccordionItem>
+                    <h2>
+                    <AccordionButton bg="#e3e3e3" color="#333" _expanded={ {bg:'#333', color:'#fff'} } > 
+                        <Box as="span" flex='1' textAlign='left'>
+                        Container
+                        </Box>
+                        <AccordionIcon />
+                    </AccordionButton>
+                    </h2>
+                    <AccordionPanel pb={4}>
+                    Container Settings
+                    </AccordionPanel>
+                </AccordionItem>
+            
+            </Accordion>
         </>
     )
 

@@ -11,8 +11,6 @@ const AllTestimonials = (props) => {
 
     let testimonialData = [...state?.data];
 
-    console.log(state);
-
     const {isOpen, onOpen, onClose, getDisclosureProps} = useDisclosure();
     const [editIndex, setEditIndex] = useState(null);
     const btnRef = React.useRef(); 

@@ -3,9 +3,8 @@ import AllTestimonials from "./allTestimonials";
 import { AppProvider } from "../../../AppContext";
 
 
-const Wrapper = (props) => {
+const TestimonialListWrapper = (props) => {
 
-    console.log('wrapper render');
 
     return(
         <AppProvider >
@@ -14,4 +13,4 @@ const Wrapper = (props) => {
     );
 }
 
-export default Wrapper;
+export default TestimonialListWrapper;
