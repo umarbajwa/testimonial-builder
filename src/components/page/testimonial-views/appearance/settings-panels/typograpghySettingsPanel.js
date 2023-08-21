@@ -1,13 +1,13 @@
 import React from "react";
-import { useTestimonialViewContext } from "../../testimonial-views/testimonialViewContext";
+import { useTestimonialViewContext } from "../../testimonialViewContext";
 import {
     Box,
     FormControl,
     FormLabel, 
     InputGroup, Input, Select
 } from "@chakra-ui/react";
-import ColorPicker from "../../../elements/fields/colorPicker";
-import NumberSliderInput from "../../../elements/fields/numberSliderInput";
+import ColorPicker from "../../../../elements/fields/colorPicker";
+import NumberSliderInput from "../../../../elements/fields/numberSliderInput";
 
 const TypographySettingsPanel = (props) => {
 
@@ -48,7 +48,7 @@ const TypographySettingsPanel = (props) => {
                 <FormControl {...FormControlStyles} >
                     <FormLabel>Font Family</FormLabel>
                     <Select placeholder='Select option' value={thisPanelDataObject?.fontFamily} 
-                        onChange={ (e) => handleValueChange(e.target.value, 'fontFamaily') }
+                        onChange={ (e) => handleValueChange(e.target.value, 'fontFamily') }
                         {...singleInputFieldStyles}
                     >
                         <option value='arial'>Arial</option>

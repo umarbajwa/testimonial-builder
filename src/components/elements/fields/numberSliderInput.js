@@ -3,10 +3,10 @@ import { Flex, NumberInput, NumberInputField, NumberInputStepper,NumberIncrement
 
 
 const NumberSliderInput = (props) => {
+  
     const [value, setValue] = React.useState(props.value);
 
     const handleChange = (value) => {
-        console.log(value);
         setValue(value);
         props.updateNumberInput(value, props.optionName);
     }

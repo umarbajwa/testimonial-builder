@@ -56,6 +56,13 @@ export const testimonialViewData = [
                 },
                 authorRole:{
                 }
+            },
+            image: {
+
+            },
+            container: {
+                background:'',
+                border: '',
             }
         }
     }

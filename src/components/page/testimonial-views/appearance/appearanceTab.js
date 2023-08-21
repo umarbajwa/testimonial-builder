@@ -1,5 +1,5 @@
 import React from "react";
-import { useTestimonialViewContext } from "../testimonial-views/testimonialViewContext";
+import { useTestimonialViewContext } from "../testimonialViewContext";
 import {
     Accordion,
     AccordionItem,
@@ -9,6 +9,7 @@ import {
     Box,
   } from '@chakra-ui/react'
 import TypographySettings from "./typographySettings";
+import ContainerSettings from "./settings-panels/containerSettings";
 
 
 const AppearanceTab = () => {
@@ -56,8 +57,8 @@ const AppearanceTab = () => {
                         <AccordionIcon />
                     </AccordionButton>
                     </h2>
-                    <AccordionPanel pb={4}>
-                    Container Settings
+                    <AccordionPanel pb={4} minH="300px" >
+                        <ContainerSettings />
                     </AccordionPanel>
                 </AccordionItem>
             

@@ -1,5 +1,5 @@
 import React from "react";
-import { useTestimonialViewContext } from "../testimonial-views/testimonialViewContext";
+import { useTestimonialViewContext } from "../testimonialViewContext";
 import { 
     Box,
     Tabs, TabList, TabPanels, Tab, TabPanel,

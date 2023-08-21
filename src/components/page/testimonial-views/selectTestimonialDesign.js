@@ -13,7 +13,6 @@ const SelectTesmonialDesign = (props) => {
         dispatch( {type: "NHUPDATE", data: [testimonialViewData] });
     }
 
-
     return( 
         <>
             <Box w="70%" m="20px auto" bg="#fff" padding="10px 20px">
